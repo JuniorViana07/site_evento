@@ -52,15 +52,27 @@ body {
     gap: 2rem;
 }
 
+
 .navbar__menu a {
     color: var(--color-white);
     text-decoration: none;
     font-weight: 400;
     transition: 0.3s;
+    text-align: center;
 }
 
 .navbar__menu a:hover {
     color: var(--color-blue);
+}
+
+
+@media (max-width=900px){
+    .navbar{
+        grid-template-columns: 1fr;
+    }
+    .navbar__menu{
+        margin-top: 2rem;
+    }
 }
 
 .hero {
@@ -156,6 +168,11 @@ body {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.sobre__info:hover {
+    transform: scale(1.05);
 }
 
 .sobre__info h3 {
@@ -296,7 +313,7 @@ body {
 }
 
 
-/* Essa ideia de media vai servir pra caso mude de tamanho de tela, por exemplo pra tela de tamanho max 900  */
+/* Essa ideia de media vai servir pra caso mude de tamanho de tela, por exemplo pra tela de tamanho max 900*/
 @media (max-width: 900px) {
   .carousel__slide-content {
     grid-template-columns: 1fr;
@@ -354,15 +371,18 @@ body {
     font-size: 16px;
 }
 
-.form-group.checkbox {
+.form-group-checkbox {
     margin-bottom: 1rem;
     flex-direction: row;
     align-items: center;
 }
 
-.form-group.checkbox input {
+.form-group-checkbox input {
     margin-right: 8px;
+    cursor: pointer;
 }
+
+
 
 .btn-inscrever {
     background-color: #4287f5;
@@ -452,7 +472,7 @@ body {
 .footer__social img {
     width: 24px;
     height: 24px;
-    transition: transform 0.2s;
+    transition: 0.2s;
 }
 
 .footer__social a:hover img {
@@ -461,13 +481,8 @@ body {
 
 .footer__bottom {
     text-align: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid #333333;
     margin-top: 30px;
     padding-top: 15px;
     font-size: 0.85rem;
-}
-
-.footer__bottom a {
-    color: #f64348;
-    text-decoration: none;
 }

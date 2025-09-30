@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento</title>
+    <title>Acalourada - PETComp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet" />
@@ -58,7 +58,7 @@
                 <aside class="sobre__info">
                     <h3>Informações do Evento</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/512/1067/1067374.png" alt="icone-calendario" class="info-icon"> 24 a 26 de Setembro</li>
+                        <li><img src="https://cdn-icons-png.freepik.com/512/2693/2693710.png" alt="icone-calendario" class="info-icon"> 24 a 26 de Setembro</li>
                         <li><img src="https://cdn-icons-png.freepik.com/512/7711/7711464.png" alt="icone-localizacao" class="info-icon"> CCET – UFMA</li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/1387/1387905.png" alt="icone-desafio" class="info-icon"> Palestras, oficinas e desafios</li>
                         <li><img src="https://cdn-icons-png.flaticon.com/512/2343/2343554.png" alt="icone-aperto-de-mao" class="info-icon"> Gratuito para toda a comunidade</li>
@@ -93,6 +93,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="carousel__slide">
                                 <div class="carousel__slide-content">
                                     <div class="carousel__slide-img">
@@ -126,11 +127,38 @@
                     <button class="carousel__button carousel__button--prev">&#10094;</button>
                     <button class="carousel__button carousel__button--next">&#10095;</button>
                     </div>
+                        <button id="ver-programacao" class="button_inscreva">Ver programação completa</button>
+
+                        <div id="programacao-detalhada" class="programacao__detalhada">
+                            <h3>Programação detalhada – Dia 1</h3>
+                            <ul>
+                                <li><strong>08h30 – 09h00:</strong> Abertura oficial</li>
+                                <li><strong>09h00 – 10h00:</strong> Palestra: Boas-vindas ao curso</li>
+                                <li><strong>10h00 – 11h00:</strong> Dinâmicas de integração</li>
+                                <li><strong>11h00 – 12h00:</strong> Coffee break e networking</li>
+                            </ul>
+
+                            <h3>Programação detalhada – Dia 2</h3>
+                            <ul>
+                                <li><strong>08h30 – 09h30:</strong> Oficina de lógica</li>
+                                <li><strong>09h30 – 10h30:</strong> Palestra: Mulheres na Computação</li>
+                                <li><strong>10h30 – 11h30:</strong> Atividade prática</li>
+                                <li><strong>11h30 – 12h00:</strong> Encerramento do dia</li>
+                            </ul>
+                            
+                            <h3>Programação detalhada – Dia 3</h3>
+                            <ul>
+                                <li><strong>08h30 – 09h30:</strong> Caminhada conhecendo CCET</li>
+                                <li><strong>09h30 – 11h30:</strong> Visita aos laboratórios do Curso</li>
+                                <li><strong>11h30 – 12h00:</strong> Encerramento e premiação</li>
+                            </ul>
+                        </div>
+
                 </div>
             
             </div>
-        </section>
 
+        </section>
         <section class="section" id="inscricoes">
             <div class="form-box">
                 <h2>Inscreva-se</h2>
@@ -162,7 +190,7 @@
         <section class="section" id="apoiadores">
             <h2 class="section__title">Apoiadores</h2>
             <div class="apoiadores__logos">
-                <a href="https://petcompufma.org/" target="_blank"><img src="https://petcompufma.org/img/logo.png" alt="PETCOMP"></a>
+                <a href="https://petcompufma.org/" target="_blank"><img src="https://petcompufma.org/eacomp/img/supporters/4.png" alt="PETCOMP"></a>
                 <a href="https://portais.ufma.br/PortalUfma/" target="_blank"><img src="https://portalpadrao.ufma.br/site/ufma-logo.png" alt="UFMA"></a>
                 <a href="https://sigaa.ufma.br/sigaa/public/departamento/professores.jsf?id=998&lc=pt_BR" target="_blank"><img src="https://petcompufma.org/eacomp/img/supporters/3.png" alt="DEINF"></a>
             </div>
@@ -180,7 +208,8 @@
             <div class="footer__contact">
                 <h4>Contato</h4>
                 <ul>
-                    <li>Email: <a href="mailto:petcomp@ufma.br">petcomp@ufma.br</a></li>
+                    <li>Email: <a href="mailto:petcomputacao@ufma.br">petcomputacao@ufma.br</a></li>
+                    <li>Telefone: (98) 0000-0000</li>
                 </ul>
             </div>
 
@@ -211,8 +240,26 @@
         document.querySelector('.carousel__button--prev').addEventListener('click', ()=>{
             index = (index - 1 + slides.length) % slides.length;
             updateCarousel();
+            
         });
+
+        const botao = document.getElementById('ver-programacao');
+        const bloco = document.getElementById('programacao-detalhada');
+
+        botao.addEventListener('click', () => {
+            const visivel = bloco.style.display === 'block';
+
+            if(visivel==true) {
+                bloco.style.display = 'none';
+                botao.textContent = 'Ver programação completa';
+            }
+            else {
+                bloco.style.display = 'block';
+                botao.textContent = 'Ocultar programação';
+            }
+            
+        })
+
     </script>
-    
 </body>
 </html>

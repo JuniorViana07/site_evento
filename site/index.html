@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar__logo">
+            <a href="#home"><img src="https://petcompufma.org/img/logo.png" alt="logo-do-petcomp"></a>
+        </div>
+        <nav class="navbar__menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre o Evento</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#inscricoes">Inscrições</a></li>
+                <li><a href="#apoiadores">Apoiadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero / inicio / home-->
+        <section class="hero" id="home">
+            <img class="hero__background" src="https://petcompufma.org/img/sobre-image6.jpeg" alt="imagem integrantes">
+            <div class="hero__foreground">
+                <h1 class="hero__title">Acalourada 2025.1</h1>
+                <p class="hero__text">
+                    24 a 26 de Setembro - Organizado pelo PETComp
+                </p>
+                <a href="#inscricoes" class="button_inscreva">Inscreva-se</a>
+            </div>
+        </section>
+
+        <!--secao sobre-->
+        <section class="section" id="sobre">
+            <div class="sobre__container">
+                <div class="sobre__texto">
+                    <h2 class="section__title">Sobre o Evento</h2>
+                    <p class="section__text">
+                        A Acalourada de Programação é um evento anual realizado pelo PETCOMP UFMA
+                        para receber os calouros do curso de Ciência da Computação. Durante três dias,
+                        participantes terão acesso a palestras, oficinas e desafios de programação que
+                        introduzem ferramentas e práticas fundamentais para a vida acadêmica e profissional.
+                    </p>
+                    <p class="section__text">
+                        Venha conhecer a comunidade, fazer networking e começar o semestre com
+                        muita informação e diversão!
+                    </p>
+                </div>
+
+                <aside class="sobre__info">
+                    <h3>Informações do Evento</h3>
+                    <ul>
+                        <li><span>📅</span> 24 a 26 de Setembro</li>
+                        <li><span>📍</span> Auditório do CCET – UFMA</li>
+                        <li><span>🎯</span> Palestras, oficinas e desafios</li>
+                        <li><span>💡</span> Gratuito para toda a comunidade</li>
+                    </ul>
+                    <a href="#inscricoes" class="button_inscreva">Inscreva-se</a>
+                </aside>
+            </div>
+            
+        </section>
+
+        <section class="section" id="programacao">
+            <div class="programacao__container">
+                <div class="programacao__conteudo">
+                    <h2 class="section__title">Programação</h2>
+
+                    <div class="carousel" id="carousel">
+                        <div class="carousel__track"><!--trilho completo-->
+                            <div class="carousel__slide"><!--cada card-->
+                                <div class="carousel__slide-content">
+                                    <div class="carousel__slide-img">
+                                        <div class="carousel__slide-image">
+                                            <img src="https://petcompufma.org/img/2024/Acalourada%202024.1/Acaloura2024.2_1.jpg" alt="image_carousel">
+                                        </div>
+                                    </div>
+                                    <div class="carousel__slide-text">
+                                        <h3>Dia 1 – 15/03</h3>
+                                        <p>Abertura oficial do evento com palestra: "Boas-vindas ao curso e à comunidade".
+                                            Recepção dos calouros, sessões de integração e coffee break para networking.</p>
+                                        <p>Horário: 08:30 – 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__slide">
+                                <div class="carousel__slide-content">
+                                    <div class="carousel__slide-img">
+                                        <div class="carousel__slide-image">
+                                            <img src="https://petcompufma.org/img/2024/Acalourada%202024.1/Acaloura2024.2_1.jpg" alt="image_carousel">
+                                        </div>
+                                    </div>
+                                    <div class="carousel__slide-text">
+                                        <h3>Dia 2 – 15/03</h3>
+                                        <p>Abertura oficial do evento com palestra: "Boas-vindas ao curso e à comunidade".
+                                            Recepção dos calouros, sessões de integração e coffee break para networking.</p>
+                                        <p>Horário: 08:30 – 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__slide">
+                                <div class="carousel__slide-content">
+                                    <div class="carousel__slide-img">
+                                        <div class="carousel__slide-image">
+                                            <img src="https://petcompufma.org/img/2024/Acalourada%202024.1/Acaloura2024.2_1.jpg" alt="image_carousel">
+                                        </div>
+                                    </div>
+                                    <div class="carousel__slide-text">
+                                        <h3>Dia 3 – 15/03</h3>
+                                        <p>Abertura oficial do evento com palestra: "Boas-vindas ao curso e à comunidade".
+                                            Recepção dos calouros, sessões de integração e coffee break para networking.</p>
+                                        <p>Horário: 08:30 – 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <button class="carousel__button carousel__button--prev">&#10094;</button>
+                    <button class="carousel__button carousel__button--next">&#10095;</button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="section" id="inscricoes">
+            <div class="form-box">
+                <h2>Inscreva-se</h2>
+                <form id="form-inscricao">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" required>
+                    </div>
+                    
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" name="aceito" id="aceito" required>
+                        <label for="aceito">Aceito receber e-mails e mensagens sobre o evento</label>
+                    </div>
+
+                    <button type="submit" class="btn-inscrever">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="apoiadores">
+            <h2 class="section__title">Apoiadores</h2>
+            <div class="apoiadores__logos">
+                <a href="https://petcompufma.org/" target="_blank"><img src="https://petcompufma.org/img/logo.png" alt="PETCOMP"></a>
+                <a href="https://portais.ufma.br/PortalUfma/" target="_blank"><img src="https://portalpadrao.ufma.br/site/ufma-logo.png" alt="UFMA"></a>
+                <a href="https://sigaa.ufma.br/sigaa/public/departamento/professores.jsf?id=998&lc=pt_BR" target="_blank"><img src="https://petcompufma.org/eacomp/img/supporters/3.png" alt="DEINF"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__about">
+                <h4>PETCOMP UFMA</h4>
+                <p>Programa de Educação Tutorial de Ciência da Computação – UFMA.</p>
+            </div>
+
+            <div class="footer__contact">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Email: <a href="mailto:petcomp@ufma.br">petcomp@ufma.br</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <h4>Siga-nos</h4>
+                <a href="https://www.instagram.com/petcompufma/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2025 PETCOMP UFMA – Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const track = document.querySelector('.carousel__track');
+        const slides = Array.from(track.children);
+        let index = 0;
+
+        function updateCarousel(){
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.querySelector('.carousel__button--next').addEventListener('click', ()=>{
+            index = (index + 1) % slides.length;
+            updateCarousel();
+        });
+        
+        document.querySelector('.carousel__button--prev').addEventListener('click', ()=>{
+            index = (index - 1 + slides.length) % slides.length;
+            updateCarousel();
+        });
+    </script>
+    
+</body>
+</html>

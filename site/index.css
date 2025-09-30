@@ -31,7 +31,7 @@ body {
     background-color: var(--color-dark-blue);
     backdrop-filter: blur(6px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem 3rem;
     z-index: 100;
@@ -65,10 +65,15 @@ body {
     color: var(--color-blue);
 }
 
+.navbar__menu .button_inscreva:hover {
+    background-color: var(--color-white);
+}
 
-@media (max-width=900px){
+
+@media (max-width: 900px) {
     .navbar{
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
     }
     .navbar__menu{
         margin-top: 2rem;
@@ -83,7 +88,6 @@ body {
 }
 
 .hero__background {
-    backdrop-filter: blur;
     object-fit: cover;
     position: absolute; /*position para poder ficar acima ou abaixo de outros elementos*/
     top: 0;
@@ -148,12 +152,12 @@ body {
 }
 
 .sobre__container {
-    max-width: 1100px;
+    max-width: 65vw;
     margin: 0 auto;
     padding: 4rem 2rem;
     display: grid;
     grid-template-columns: 1fr 320px;
-    gap: 3rem;
+    gap: 9rem;
     align-items: start;
 }
 
@@ -173,6 +177,11 @@ body {
 
 .sobre__info:hover {
     transform: scale(1.05);
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .sobre__info h3 {
@@ -242,7 +251,7 @@ body {
 
 .carousel__track {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /*move os slides*/
 }
 
 .carousel__slide { 
@@ -257,7 +266,7 @@ body {
 .carousel__slide-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
     padding: 2.2rem 3rem;
 

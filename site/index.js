@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const botao = document.getElementById('ver-programacao');
     const bloco = document.getElementById('programacao-detalhada');
     botao.addEventListener('click', () => {
-    const visivel = bloco.style.display === 'block';
+        const visivel = bloco.style.display === 'block';
 
-    if (visivel == true) {
-        bloco.style.display = 'none';
-        botao.textContent = 'Ver programação completa';
-    }
-    else {
-        bloco.style.display = 'block';
-        botao.textContent = 'Ocultar programação';
+        if (visivel == true) {
+            bloco.style.display = 'none';
+            botao.textContent = 'Ver programação completa';
+        }
+        else {
+            bloco.style.display = 'block';
+            botao.textContent = 'Ocultar programação';
         }
     })
 });

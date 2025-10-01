@@ -83,7 +83,7 @@ body {
 
 .hero {
     background: linear-gradient( rgb(0,0,0,0.1)70%, var(--color-background));
-    position: relative; /*permite que itens sejam posicionados em relação a ele*/
+    position: relative; /*permite que itens sejam posicionados em relação a ele como background*/
     min-height: 100vh;
     padding-top: 6rem; /* espaço da navbar */
 }
@@ -260,7 +260,6 @@ body {
     padding: 0;
     background-color: transparent;
     border-radius: 9px;
-    box-sizing: border-box;
 }
 
 /*alinhar imagens e textos e define duas colunas*/
@@ -300,7 +299,7 @@ body {
 .carousel__slide-text p {
     margin: 0.45rem 0;
     line-height: 1.6;
-    color: var(--color-blue);
+    color: var(--color-dark-blue);
     font-size: 1.1rem;
 }
 
@@ -364,7 +363,7 @@ body {
 .programacao__detalhada li {
     margin-bottom: 0.6rem;
     font-size: 1.05rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 
